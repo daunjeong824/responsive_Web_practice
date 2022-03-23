@@ -6,3 +6,56 @@
 body {
     font-family: 'DM Sans', sans-serif;
 }
+
+/* Reset CSS, 기존 CSS 죽이기 */
+a { 
+    color: inherit; /* 부모의 색깔을 상속받기 */
+    text-decoration: none;
+}
+button,
+textarea,
+input {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    border: none;
+}
+
+button:focus,
+button:active,
+textarea:focus,
+textarea:active,
+input:focus,
+input:active {
+    box-shadow: none;
+    outline: none;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2B292D;
+    letter-spacing: -0.01em;
+}
+
+/* Desktop size(768px 이상) */
+@media screen and (min-width: 768px) {
+    p {
+    font-size: 22px;
+    line-height: 1.363636;
+    }
+}
+
+/* Custom Gird System */
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 960px !important;
+    }
+}
