@@ -109,9 +109,28 @@ button:hover {
     color: #3040C4;
 }
 
-/* Testimonials */
-.testimonials {
-    height: 496px;
+/* service */
+.service {
+    background-color: #F4F5F7;
+    
+}
+
+.service-content {
+    width: 100%;
+    padding: 80px 0;
+}
+
+.service-title {
+    font-size: 22px;
+    line-height: 1.36363636;
+    letter-spacing: -0.04em;
+    font-weight: 700;
+
+    margin-bottom: 16px;
+}
+
+.first .service-description{
+    margin-bottom: 40px;
 }
 /* Program */
 .program {
@@ -167,6 +186,19 @@ button:hover {
 
     .landing .buttonGroup button:first-child {
         margin-right: 16px;
+    }
+
+    /* service */
+    .service-content {
+        display: flex;
+
+    }
+    .service-title {
+        font-size: 26px;
+        line-height: 1.41666;
+    }
+    .first {
+        margin-right: 110px;
     }
 
 }
