@@ -45,12 +45,130 @@ p {
     letter-spacing: -0.01em;
 }
 
+button {
+    width: 140px;
+    
+    padding: 12px 32px;
+    display: block;
+    border: none;
+    border-radius: 2px;
+
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: -0.05em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.5;
+    transition: opacity 250ms ease-in;
+}
+
+/* Landing */
+.landing {
+    background-color: #FDDED8;
+    text-align: center;
+}
+
+.landing-content {
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.landing h1 {
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.landing p {
+    line-height: 1.375;
+    margin-bottom: 24px;
+}
+
+.landing .buttonGroup {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+}
+
+.landing .buttonGroup button:first-child {
+    background-color: #3040C4;
+    color: #FFFF;
+    margin-right: 8px;
+}
+.landing .buttonGroup button:last-child {
+    background-color:#FFFF;
+    color: #3040C4;
+}
+
+/* Testimonials */
+.testimonials {
+    height: 496px;
+}
+/* Program */
+.program {
+    height: 1377px;
+}
+/* Curriculum */
+.curriculum {
+    height: 706px;
+}
+/* Banner */
+.banner {
+    height: 588px;
+}
+
+/* Footer */
+.footer {
+    height: 136px;
+}
+
 /* Desktop size(768px 이상) */
 @media screen and (min-width: 768px) {
     p {
     font-size: 22px;
     line-height: 1.363636;
     }
+
+    button {
+        width: 160px;
+        height: 56px;
+        padding: 14px 35px;
+    
+        font-size: 18px;
+        line-height: 1.5555;
+        
+    }
+
+    /* Landing */
+    .landing-content {
+        height: auto;
+        padding: 120px 0;
+    }
+    .landing h1 {
+        font-size: 70px;
+        line-height: 1.02857;
+        letter-spacing: -0.05em;
+        margin-bottom: 32px;
+    }
+
+    .landing p {
+        font-size: 22px;
+        margin-bottom: 32px;
+    }
+
+    .landing .buttonGroup button:first-child {
+        margin-right: 16px;
+    }
+
 }
 
 /* Custom Gird System */
@@ -58,4 +176,6 @@ p {
     .container {
         max-width: 960px !important;
     }
+
 }
+
