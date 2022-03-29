@@ -196,8 +196,44 @@ button:hover {
 }
 /* Curriculum */
 .curriculum {
-    height: 706px;
+    padding: 80px 0;
 }
+
+.curriculum-header {
+    margin-bottom: 48px;
+}
+
+.curriculum-category {
+    font-weight: 700;
+    color: #0189D1;
+    margin-bottom: 8px;
+}
+
+.curriculum-title {
+    font-size: 34px;
+    line-height: 1.058823;
+    letter-spacing: -0.03em;
+    color: #2B292D;
+    margin-bottom: 24px;
+}
+
+.curriculum-description {
+    margin-bottom: 32px;
+}
+
+.curriculum-header button {
+    background-color: #3040C4;
+    color: #FFFF;
+}
+
+.curriculum-item:first-child {
+    margin-bottom: 40px;
+}
+
+.curriculum-img {
+    display: none;
+}
+
 /* Banner */
 .banner {
     height: 588px;
@@ -308,6 +344,70 @@ button:hover {
 
     .program-img-box:last-child {
         margin-right: 0;
+    }
+    /* Curriculum */
+    .curriculum .col-12:first {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .curriculum-header {
+        width: 450px;
+        margin: 0 13px 66px 0;
+    }
+
+    .curriculum-category {
+        font-size: 22px;
+        line-height: 1.090909;
+        margin-bottom: 16px;
+    }
+
+    .curriculum-title {
+        font-size: 56px;
+        line-height: 1;
+        margin-bottom: 32px;
+    }
+
+    .curriculum-description {
+        font-size: 22px;
+        line-height: 1.454545;
+        margin-bottom: 72px;
+        
+    }
+    .curriculum-header button {
+        font-size: 0;
+    }
+    .curriculum-header button::after{
+        display: inline;
+        content : 'Learn more';
+        font-size: 18px;
+        line-height: 1.5555;
+        
+        letter-spacing: -0.05em;
+    }
+
+    .curriculum-img {
+        display: block;
+        width: 425px;
+        height: 425px;
+        margin-bottom: 24px;
+    }
+
+    .curriculum-details {
+        display: flex;
+        margin-bottom: 16px;
+    }
+
+    .curriculum-item {
+        width: 450px;
+        font-size: 18px;
+        line-height: 1.4444444;
+        
+    }
+    .curriculum-item:first-child {
+        margin-right: 30px;
+        margin-bottom: 0;
     }
 }
 
